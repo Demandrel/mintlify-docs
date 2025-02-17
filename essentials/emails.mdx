@@ -1,6 +1,12 @@
+---
+title: "Emails"
+description: "Setup your emails with Plunk"
+icon: "email"
+---
+
 Supatauri use Plunk to send emails to your user. You need to configurate your own Plunk account to  send users important transactional emails like password resets or confirmation code when they create an account.
 
-## Create your own Plunk account
+## 1) Create your own Plunk account
 
 Go to [useplunk.com](https://www.useplunk.com/) and create a new account. ![](/CleanShot2025-02-17at14.39.15.png)
 
@@ -12,7 +18,7 @@ To be able to send emails, you should setup your dsn. In your Plunk account, go 
 
 Once you have setup all your dns, you should be able to send emails via Plunk:![](/CleanShot2025-02-17at15.04.11.png)
 
-# Connect plunk to your app
+# 2) Connect plunk to your app
 
 Your app will send events via the Plunk API to trigger sending emails. For example when a user creates a new account, you can trigger a "new user" even to send them a welcome email.
 
