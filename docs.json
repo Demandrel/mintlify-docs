@@ -25,6 +25,7 @@
             "group": "Essentials",
             "pages": [
               "essentials/emails",
+              "essentials/appleaccount",
               "essentials/pocketbase"
             ]
           }
