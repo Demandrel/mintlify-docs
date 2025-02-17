@@ -26,7 +26,8 @@
             "pages": [
               "essentials/emails",
               "essentials/appleaccount",
-              "essentials/pocketbase"
+              "essentials/pocketbase",
+              "essentials/authentification"
             ]
           }
         ]
