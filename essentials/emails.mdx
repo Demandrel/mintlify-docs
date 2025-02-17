@@ -1,37 +1,9 @@
----
-title: "Emails"
-description: "Manage emails with Plunk"
-icon: "code"
----
+Supatauri use Plunk to send emails to your user. You need to configurate your own Plunk account to  send users important transactional emails like password resets or confirmation code when they create an account.
 
-## Basic
+## Create your own Plunk account
 
-### Inline Code
+Go to [useplunk.com](https://www.useplunk.com/) and create a new account. ![](/CleanShot2025-02-17at14.39.15.png)
 
-To denote a `word` or `phrase` as code, enclose it in backticks (\`).
+### Set up your dns
 
-```
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-```
-
-### Code Block
-
-Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
-
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-
-````md
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-````
+To be able to send emails, you should setup your dsn. In your Plunk account, go to \`project settings\` and 'verified domain\`.&#x20;
