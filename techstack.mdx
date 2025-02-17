@@ -4,3 +4,39 @@ description: "Learn about the tech stack used in Supatauri."
 ---
 
 For a better understanding of the codebase, let's first go over the tools and libraries that Supatauri uses and why we chose them.
+
+## Tauri
+
+Tauri 2.0 is a modern tool to build cross platform apps, powered by Rust. We have chosen to use Tauri over competitors like Capacitor for several reasons:
+
+* Tauri applications are much lighter because they do not need to be packaged with a full web brower as Capacitor apps.&#x20;
+
+* Tauri apps are also much faster because they can use native browsers and Rust.&#x20;
+
+* Better dev experience: you can have hot live reload when you dev your Tauri app: edit your code and see changed on your phone or emulator. With Capacitor you need to rebuild and re launch the app each time.&#x20;
+
+* Security: Tauri is built with security in mind.&#x20;
+
+## Sveltekit
+
+Sveltekit is considered as the most loved javascript framework by many, because it is both simple to use, easy to learn, and extremely performant. We use it to manage the front end of the app.&#x20;
+
+If you don't like Svelte, you can still remove all the code and use React or any other framework, you will just have to rebuild some parts as auth or onboarding yourself.&#x20;
+
+## Bits-ui
+
+Bits-ui is a headless UI library for Svelte. It is a perfect solution to create full customisable components that are 100% accessible and comes with beautiful and fluid animations.&#x20;
+
+## Tailwindcss
+
+Tailwindcss is maybe the most popular css library, therefore it was an obvious choice to integrate it to manage the style of our components.&#x20;
+
+## RevenueCat
+
+To manage in-app purchases, we use RevenueCat, which is one of the leading solutions to manage mobile subscriptions. We created our own lib for Tauri, working with both android and iOS.&#x20;
+
+## Pocketbase
+
+The database we use to manage data storage and auth is Pocketbase. It is a fast and easy to learn solution for small to medium apps that is easy to self host. Its simplicity and low cost (for a $5/month server you can get what would cost you $1000 with Supabase) make it the perfect choice for mobile apps.&#x20;
+
+Pocket is known for scaling only vertically, but the day you will being in trouble for having 1 million of simultaneous connection, you will probably have enough budget to migrate your entire database.&#x20;
